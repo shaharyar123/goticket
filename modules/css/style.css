@@ -1,6 +1,7 @@
 body {
     background: url("../../images/body-bg.jpg")no-repeat;
     background-size: cover;
+    margin: 0;
 }
 .login-container {
     width: 100%;
@@ -14,7 +15,7 @@ body {
     color: white;
     font-weight: bold;
 }
-.login-container header {
+header {
     background: white;
     display: inline-block;
     padding: 13px 0;
@@ -23,12 +24,14 @@ body {
     width: 50%;
     display: block;
     margin: 30px auto 0 auto;
-    background: #7c7d7d;
+    background: rgba(0, 0, 0, 0.79);
     padding: 30px 40px;
+    height: 380px;
 }
 .login-container form label {
     float: left;
     font-size: 18px;
+    color: white;
 }
 .login-container form span {
     color: #801212;
@@ -38,6 +41,27 @@ body {
     float: left;
     margin-top: 5px;
     margin-left: 5px;
+    color: white;
+}
+.login-container .form-actions {
+    position: relative;
+    width: 25%;
+    margin: 0 auto;
+    text-align: center;
+}
+.login-container .error {
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+}
+.login-container .form-actions .spin-icon {
+    display: block;
+    margin: 0 auto;
+    float: none;
 }
 .login-container form button {
     background: #c3c3c3;
@@ -45,4 +69,99 @@ body {
     padding: 10px 40px;
     font-size: 18px;
     margin-top: 10px;
+}
+.navigation {
+    width: 100%;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.81);
+    margin-bottom: 20px;
+}
+.navigation .navbar-brand {
+    margin-top: 10px;
+}
+.navigation h1 {
+    margin: 0;
+}
+.navigation ul {
+    margin: 0;
+    padding: 0;
+}
+.navigation ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+}
+.navigation ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.navigation ul li a:hover {
+    background: grey;
+}
+.content {
+    width: 100%;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: center;
+}
+.content .detail-table {
+    width: 30%;
+    float: left;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.88);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+.content .detail-table h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'Spectral', serif;
+}
+.content .detail-table hr {
+    border: 1px dashed white;
+    width: 80%;
+    margin: 0 auto;
+}
+.content .detail-table .icon-container {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    background: black;
+    border-radius: 50%;
+    text-align: center;
+    margin: 10px 0;
+}
+.content .detail-table .icon-container i {
+    color: #428bca;
+    font-size: 45px;
+    margin-top: 10px;
+}
+.content .detail-table p {
+    color: white;
+    font-family: 'Spectral', serif;
+}
+.content .detail-table span {
+    color: white;
+    font-size: 20px;
+    font-family: 'Spectral', serif;
+    width: 100%;
+    display: block;
+}
+.content .detail-table a {
+    margin: 20px 0;
+    background: #428bca;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-family: 'Spectral', serif;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
 }
