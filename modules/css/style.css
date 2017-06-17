@@ -15,9 +15,14 @@ body {
     color: white;
     font-weight: bold;
 }
+.logo-text{
+    color: white;
+    font-family: Spectral;
+}
 header {
-    background: white;
-    display: inline-block;
+    /*background: white;*/
+    background: rgba(8, 8, 8, 0.72);
+    /*display: inline-block;*/
     padding: 13px 0;
 }
 .login-container form {
